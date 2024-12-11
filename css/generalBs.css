@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* header */
+#mIcon, #searchIcoA > p, .mArea > span {
+    display: none;
+}
+
+
+
+/* menu */
+#mobMenu-sec {
+    background-color: #320c58;
+
+    position: absolute;
+    align-self: center;
+
+    right: 50%;
+    transform: translateX(50%)
+}
+
+
+#mobMenu{
+    background-color: #c1c1ff;
+
+    display: flex;
+    height: 8vh;
+    
+}
+
+#searchIco {
+    display: block;
+}
+
+.mArea {
+    height: 8vh;
+    width: max-content;
+}
+
+.mArea > p {
+    margin: 15px;
+}
+
+.mArea:hover {
+    color: var(--red);
+}
+
+#searchIco {
+    margin: 0;
+}

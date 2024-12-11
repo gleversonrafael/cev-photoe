@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+
+/* Mobile first*/
+/* -------------------------------------------- */
+
+/* arrumar flor e continuar site na conclusão do curso */
+/* box composition */
+.amSection::before {
+    position: absolute;
+
+    content: "";
+
+    background: url(../media/img/flow.png) no-repeat;
+    background-size: 380px 285px;
+
+    background-position: 10vw 40vh;
+    
+    height: 75%;
+    max-height: 600px;
+
+    width: 80%;
+    max-width: 1000px;
+
+    opacity: 0.3;
+}
+
+#mBlockLogin {
+    height: 75%;
+    max-height: 600px;
+
+    width: 80%;
+    max-width: 1000px;
+}
+
+
+
+
+/* form */
+#loginF {
+    font-family: var(--rFont);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 35px;
+}
+
+
+/* inputs */
+#loginF input{ /* login input box */    
+    border-radius: 25px;
+    border: none;
+}
+
+#logEmail, #logPass {
+    width: 90%;
+    height: 30px;
+
+    padding: 0px 5%;
+}
+
+#logEmail {
+    margin-bottom: 12.5px;
+}
+
+
+
+
+/* sections and elements that are relative to sections */
+#loginF > section {
+    width: 65%;
+}
+
+#loginF > section:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+#loginF > section:nth-of-type(2) > a {
+    margin-top: 5px;
+    font-size: 0.8em;
+   
+    display: block;
+    text-align: right;
+}
+
+#loginF > section:nth-of-type(3) {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* form buttons */
+#l-confirm, #l-signA {
+    color: var(--white);
+
+    width: 48%;
+    height: 30px;
+
+    padding: 5px 0px;
+}
+
+#l-confirm:hover, #l-signA:hover {
+    background-color: var(--black);
+    
+    cursor: pointer;
+    transition: all 0.75s;
+}
+
+#l-signA { /* login sign anchor */
+    margin-right: 4%;
+    background-color: var(--lilac);
+}
+
+#l-confirm { /* login confirm button */
+    background-color: var(--red);
+}
+
+
+
+
+/* fix-flower */
+@media screen and (min-width: 480px) {
+    .amSection:before {
+        background-position: center 325px;
+    }
+}
+
+
+
+
+/* bigger screens*/
+/* -------------------------------------------- */
+@media screen and (min-width: 768px) {    
+    /* content */
+    body {
+        background-color: var(--strongestGrey);
+    }
+
+
+    /* main block */
+    #photoE-title {
+        margin-top: 50px;   
+    }
+
+    .amSection::before {
+        width: 65%;
+        background-size: 450px 338px;
+    }
+
+    #mCon::before {
+        content:"";
+        position: absolute;
+        
+        background-image: url(../media/img/pexels-nickcollins-1293125.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        
+        width: 100%;
+        height: 100%;
+
+        z-index: -1;
+        opacity: 0.15;
+    }
+
+    #loginF {
+        margin-top: 5vh;
+    }
+
+    #mBlockLogin, .amSection {
+        width: 65%;
+    }
+
+
+    /* sections */
+    #loginF > section {
+        width: 55%;
+    }
+
+    #loginF > section:nth-of-type(3) {
+        justify-content: end;
+    }
+
+
+
+    /* form */
+    #logEmail, #logPass {
+        height: 45px;
+    }
+
+    /* form buttons */
+    #l-signA, #l-confirm {
+        width: 25%;
+        height: 40px;
+    }
+
+    #l-signA {
+        margin-right: 5px;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    .amSection::before {
+        background-size: contain;
+        background-position: center 300px;
+    }
+}
+
+
+
