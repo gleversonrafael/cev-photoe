@@ -3,34 +3,42 @@
 
 /* Mobile first*/
 /* -------------------------------------------- */
-
-/* arrumar flor e continuar site na conclusão do curso */
 /* box composition */
-.amSection::before {
-    position: absolute;
-
-    content: "";
-
-    background: url(../media/img/flow.png) no-repeat;
-    background-size: 380px 285px;
-
-    background-position: 10vw 40vh;
-    
+.amSection {
     height: 75%;
+    min-height: 360px;
     max-height: 600px;
 
     width: 80%;
     max-width: 1000px;
+}
 
-    opacity: 0.3;
+.amSection::before {
+    content: "";
+    position: absolute;
+
+    width: 83.3333%;
+    max-width: 400px;
+    
+    height: 50%;
+    max-height: 300px;
+    
+    background: #00aa0000 url(../media/img/f-flow.png) no-repeat;
+    background-size: 400px 300px;
+    background-position: 25px 0%;
+
+    bottom: 0;
+    right: 0;
+
+    opacity: 0.5;
+
+    transition: all 100ms;
+    transition-timing-function: ease;
 }
 
 #mBlockLogin {
-    height: 75%;
-    max-height: 600px;
-
-    width: 80%;
-    max-width: 1000px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -44,7 +52,7 @@
     flex-direction: column;
     align-items: center;
 
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
 
@@ -71,6 +79,7 @@
 /* sections and elements that are relative to sections */
 #loginF > section {
     width: 65%;
+    max-width: 400px;
 }
 
 #loginF > section:nth-of-type(2) {
@@ -101,6 +110,7 @@
     height: 30px;
 
     padding: 5px 0px;
+    margin-bottom: 20px;
 }
 
 #l-confirm:hover, #l-signA:hover {
@@ -117,98 +127,6 @@
 
 #l-confirm { /* login confirm button */
     background-color: var(--red);
-}
-
-
-
-
-/* fix-flower */
-@media screen and (min-width: 480px) {
-    .amSection:before {
-        background-position: center 325px;
-    }
-}
-
-
-
-
-/* bigger screens*/
-/* -------------------------------------------- */
-@media screen and (min-width: 768px) {    
-    /* content */
-    body {
-        background-color: var(--strongestGrey);
-    }
-
-
-    /* main block */
-    #photoE-title {
-        margin-top: 50px;   
-    }
-
-    .amSection::before {
-        width: 65%;
-        background-size: 450px 338px;
-    }
-
-    #mCon::before {
-        content:"";
-        position: absolute;
-        
-        background-image: url(../media/img/pexels-nickcollins-1293125.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        
-        width: 100%;
-        height: 100%;
-
-        z-index: -1;
-        opacity: 0.15;
-    }
-
-    #loginF {
-        margin-top: 5vh;
-    }
-
-    #mBlockLogin, .amSection {
-        width: 65%;
-    }
-
-
-    /* sections */
-    #loginF > section {
-        width: 55%;
-    }
-
-    #loginF > section:nth-of-type(3) {
-        justify-content: end;
-    }
-
-
-
-    /* form */
-    #logEmail, #logPass {
-        height: 45px;
-    }
-
-    /* form buttons */
-    #l-signA, #l-confirm {
-        width: 25%;
-        height: 40px;
-    }
-
-    #l-signA {
-        margin-right: 5px;
-    }
-
-
-}
-
-@media screen and (min-width: 1200px) {
-    .amSection::before {
-        background-size: contain;
-        background-position: center 300px;
-    }
 }
 
 

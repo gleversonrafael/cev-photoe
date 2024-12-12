@@ -6,12 +6,31 @@ const mmSec = document.querySelector("section#mobMenu-sec");
 
 
 // events
+document.body.addEventListener("change", fixMenu)
 mButton.addEventListener("click", mmSwitch);
 
 
 // atribuir e remover classes
-
 function mmSwitch() {
     mm.classList.toggle("mmActive");
     mmSec.classList.toggle("mmActive");
 }
+
+function fixMenu() {
+    // variables
+
+    const mArea = document.getElementsByClassName("mArea");
+    const searchIco = document.getElementById("searchIco");
+    const searchIcoA = document.getElementById("searchIcoA");
+    
+    if(window.innerWidth >= "768px") {
+        // continuar após curso de javascript
+
+    } else {
+
+    }
+
+}
+
+
+

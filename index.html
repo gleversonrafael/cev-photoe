@@ -6,8 +6,9 @@
     <title>Photo e</title>
 
     <link rel="stylesheet" href="css/generalMob.css">
-    <link rel="stylesheet" href="css/generalBs" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/generalMqueries.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/loginMqueries.css">
 
     <!-- google icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -26,11 +27,11 @@
 
 
                 <!-- form -->
-                <form id="loginF" action="">
+                <form id="loginF" action="" autocomplete="on">
                     <!-- e-mail -->
                     <section>
                         <label for="logEmail">E-mail</label> <br>
-                        <input id="logEmail" type="email" name="login-email">
+                        <input id="logEmail" type="email" name="login-email" autocomplete="email" required maxlength="50">
 
                     </section>
 
@@ -38,7 +39,7 @@
                     <!-- password -->
                     <section>
                         <label for="logPass"> Senha</label> <br>
-                        <input id="logPass" type="password" name="login-password">
+                        <input id="logPass" type="password" name="login-password" autocomplete="current-password" required maxlength="12">
        
                         <br>
 
@@ -60,8 +61,9 @@
             </div>
 
         </section>
-
+        
     </main>
+
 
 
 
@@ -92,7 +94,7 @@
 
             <!-- mobile menu -->
             <menu id="mobMenu">
-                
+
                 <!-- free library -->
                 <li> 
                     <a href="#" class="mArea">
@@ -115,6 +117,7 @@
 
                 <!--  search -->
                 <li> 
+                    <!-- transformar em button(ao continuar o site) -->
                     <a id="searchIcoA" href="#" class="mArea">
                         <span id="searchIco" class="material-symbols-outlined">search</span>
                         <p> Pesquisar </p>
@@ -146,7 +149,6 @@
             </menu>
 
         </section>
-
         
     </header>
 

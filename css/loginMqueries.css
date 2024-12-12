@@ -1,0 +1,48 @@
+@charset "UTF_8";
+
+/* utilizando as medidas
+    320px -- 768px | mobile
+    768px -- 992px | tablet
+    992px -- 1200px | laptop
+    +1200px | pc / tv
+*/
+
+
+/* medium or bigger screen */
+@media screen and (min-width: 768px) {
+    /* flower image */
+    .amSection::before {
+        background-image: url(../media/img/flow.png);
+        background-size: 577px 433px;
+        
+        max-width: 577px;
+        max-height: 433px;
+
+        background-position: 0 0;
+
+        right: 50%;
+        transform:translate(50%);
+        
+        opacity: 1;
+    }
+
+
+
+
+    /* form */
+    /* form sections */
+    #loginF > section:nth-of-type(3) {
+        justify-content: end;
+    }
+
+
+    /* form buttons */
+    #l-confirm, #l-signA {
+        width: 25%;
+    }
+
+    #l-signA {
+        margin-right: 5px;
+    }
+
+}
