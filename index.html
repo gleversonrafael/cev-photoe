@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="css/generalMob.css">
     <link rel="stylesheet" href="css/generalMqueries.css">
+
+        <link rel="stylesheet" href="css/login-sign.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/loginMqueries.css">
 
@@ -18,8 +20,8 @@
 <body>
     <!-- main content -->
     <main id="mCon" class="v-flex">
-        <section class="amSection">
-            <div id="mBlockLogin" class="abs">
+        <section class="amSection v-flex">
+            <div id="mBlockLogin">
                 <!-- title -->
                 <h1 id="photoE-title" class="txt-center">   Photo <span id="photoE-E">e</span>   </h1>
 
@@ -44,14 +46,16 @@
                         <br>
 
                         <!-- lost data -->
-                        <a href="#"> Dados perdidos? </a>
+                        <div>
+                            <a href="#" id="lDataB"> Dados perdidos? </a>
+                        </div>
 
                     </section>
         
 
                     <!-- input buttons -->
                     <section>
-                        <input id="l-signA" type="button" value="Cadastrar">
+                        <input id="l-sign" type="button" value="Cadastrar">
                         <input id="l-confirm" type="submit" value="Entrar">
                     
                     </section>
@@ -140,7 +144,7 @@
                 <li> 
                     <a href="#" class="mArea">
                         <span class="material-symbols-outlined">work</span>
-                        <p>Trabalhos</p>
+                        <p> Trabalhos</p>
 
                     </a>
 

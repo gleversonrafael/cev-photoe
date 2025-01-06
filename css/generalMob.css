@@ -1,6 +1,5 @@
-@charset "UTF-8";
+@charset "UTF_8";/* fonts */
 
-/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -13,21 +12,27 @@
 }
 
 :root {
-    /* colors */
-    --white: #F5F6FF;
-    --whiteB: #f1f2ff;
+    /* colors 
+      w = weak
+      m = medium
+      b = brown
 
-    --medGrey: #EDEFF7;
-    --strongGrey: #D9D9D9;
-    --strongestGrey: #a8a8a8ad;
+      s = strong
+    */
+
+    --white: #FFF;
+    --wwhite: #EDEFF7;
+    --mwhite: #DFE1E8;
+    --bwhite: #EDE4E4; /* kinda like a white brown */
+
+    --wblue: #C4CBE3;
+    --sblue: #B5CFE6;
     
-    --black: #181818;
-    --red: #FF424F;
-    --lilac: #F0B4F5;
-    --wLilac: #E6D0E8; /* weak lilac */
+    --black: #000;
+    --wblack: #181818;
 
-    --purple: #E148DB;
-    --wblue: #B5CFE6;
+    --red: #FF424F;
+
 
     /* fonts */
     --rFont: "Montserrat", sans-serif;
@@ -63,7 +68,7 @@ body, html {
 #mHeader, #mFooter { /* main header */
     font-family: var(--sFont);
 
-    background-color: var(--white);
+    background-color: var(--wwhite);
     box-shadow: 0.5px 0.5px 2px #18181811;
 
     justify-content: space-between;
@@ -139,7 +144,6 @@ a:hover {
 
 
 /* mobile menu */
-
 /* before touch */
 #mobMenu-sec {
     display: flex;
@@ -200,39 +204,6 @@ a:hover {
 
 
 
-/* main content */
-.amSection { /* a main section */
-    position: relative;
-    background-color: var(--medGrey);
-    
-    margin-top: 5px;
-    box-shadow: 0.5px 4px 4px #2222223f;
-}
-
-/* title */
-#photoE-title {
-    font: normal min(48px, 10vw) var(--sFont);
-    
-    margin-top: 25px;
-}
-
-#photoE-E {
-    color: var(--red);
-
-    font-size: min(64px, 15vw);
-    font-weight: 600;
-}
-
-#slog { /* slogan */
-    font: normal min(12px, 5vw) var(--sFont);
-    font-weight: 400;
-
-    transform: translateY(-25%);
-}
-
-
-
-
 /* footer */
 #mFooter {
     position: absolute;
@@ -268,33 +239,3 @@ a:hover {
 
     margin: 0 25px;
 }
-
-
-
-
-/* Resoluções com alturas muito pequenas */
-@media screen and (max-height: 470px) {
-    /* main content */
-    #mCon {
-        display: flex;
-        align-items: start;
-
-        margin: 65px auto 0px 0px;
-        
-        min-height: 320px;
-        max-height: 400px;
-    }
-
-
-
-
-    /* main footer */
-    #mFooter {
-        position: static;
-        margin-top: 50px;
-    }
-}
-
-
-
-

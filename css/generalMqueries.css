@@ -2,38 +2,6 @@
 
 
 @media screen and (min-width: 768px) {
-    /* general */
-    body {
-        background-color: var(--strongestGrey);
-    }
-
-
-    /* consertar bug:
-    quando a altura da tela é muito pequena, a imagem de fundo fica parcialmente omitida
-    
-    */
-    #mCon::before {
-        content:"";
-        position: absolute;
-        
-        background-image: url(../media/img/f-background.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        
-        width: 100%;
-        height: 100%;
-
-        z-index: -1;
-        opacity: 0.25;
-    }
-
-    #photoE-title {
-        margin-top: 50px;
-    }
-
-
-
-
     /* header */
     #mIcon, #searchIcoA > p, .mArea > span {
         display: none;

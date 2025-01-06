@@ -3,47 +3,6 @@
 
 /* Mobile first*/
 /* -------------------------------------------- */
-/* box composition */
-.amSection {
-    height: 75%;
-    min-height: 360px;
-    max-height: 600px;
-
-    width: 80%;
-    max-width: 1000px;
-}
-
-.amSection::before {
-    content: "";
-    position: absolute;
-
-    width: 83.3333%;
-    max-width: 400px;
-    
-    height: 50%;
-    max-height: 300px;
-    
-    background: #00aa0000 url(../media/img/f-flow.png) no-repeat;
-    background-size: 400px 300px;
-    background-position: 25px 0%;
-
-    bottom: 0;
-    right: 0;
-
-    opacity: 0.5;
-
-    transition: all 100ms;
-    transition-timing-function: ease;
-}
-
-#mBlockLogin {
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
 /* form */
 #loginF {
     font-family: var(--rFont);
@@ -52,7 +11,7 @@
     flex-direction: column;
     align-items: center;
 
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 
@@ -78,20 +37,8 @@
 
 /* sections and elements that are relative to sections */
 #loginF > section {
-    width: 65%;
-    max-width: 400px;
-}
-
-#loginF > section:nth-of-type(2) {
-    margin-bottom: 25px;
-}
-
-#loginF > section:nth-of-type(2) > a {
-    margin-top: 5px;
-    font-size: 0.8em;
-   
-    display: block;
-    text-align: right;
+    width: calc(100% - 2px);
+    margin: 0px 1px;
 }
 
 #loginF > section:nth-of-type(3) {
@@ -99,34 +46,57 @@
     justify-content: space-between;
 }
 
+#loginF > section:nth-of-type(2) > div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#lDataB {
+    display: block;
+    text-align: right;
+
+    margin-top: 5px;
+    margin-bottom: 40px;
+
+    font-weight: 300;
+    font-size: 0.8em;
+   
+    width: fit-content;
+}
+
 
 
 
 /* form buttons */
-#l-confirm, #l-signA {
+#l-confirm, #l-sign {
     color: var(--white);
 
     width: 48%;
     height: 30px;
 
-    padding: 5px 0px;
+    padding: 0px 5px;
     margin-bottom: 20px;
+
+    box-sizing: border-box;
 }
 
-#l-confirm:hover, #l-signA:hover {
-    background-color: var(--black);
-    
-    cursor: pointer;
-    transition: all 0.75s;
-}
-
-#l-signA { /* login sign anchor */
+#l-sign { /* login sign anchor */
     margin-right: 4%;
-    background-color: var(--lilac);
+    background-color: var(--wblack);
 }
 
 #l-confirm { /* login confirm button */
     background-color: var(--red);
+}
+
+#l-confirm:hover, #l-sign:hover {
+    cursor: pointer;
+    transition: all 0.25s;
+
+    color: var(--black);
+    background-color: var(--white);
+    
+    border: 2px solid var(--sblue);
 }
 
 
