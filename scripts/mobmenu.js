@@ -6,7 +6,7 @@ const mmSec = document.querySelector("section#mobMenu-sec");
 
 
 // events
-document.body.addEventListener("change", fixMenu)
+document.body.addEventListener("change", fixMenu);
 mButton.addEventListener("click", mmSwitch);
 
 
@@ -24,7 +24,8 @@ function fixMenu() {
     const searchIcoA = document.getElementById("searchIcoA");
     
     if(window.innerWidth >= "768px") {
-        // continuar após curso de javascript
+        mm.classList.remove("mmActive");
+        mmSec.classList.remove("mmActive");
 
     } else {
 

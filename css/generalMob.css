@@ -146,6 +146,7 @@ a:hover {
 /* mobile menu */
 /* before touch */
 #mobMenu-sec {
+    border: 5px solid green;
     display: flex;
     align-self: flex-start;
 
@@ -155,20 +156,24 @@ a:hover {
 
 #mobMenu {
     display: none;
+    border: 2px solid red;
     list-style-type: none;
 }
 
 .mArea { /* menu area */
+    border: 1px solid blue;
     display: flex;
     align-items: center;
     
     height: 60px;
     width: 100%;
+
+    background-color: var(--wwhite);
 }
 
 .mArea:hover {
     color: var(--white);
-    background-color: var(--black);
+    background-color: var(--wblack);
 }
 
 .mArea > span {
@@ -192,13 +197,13 @@ a:hover {
 }
 
 .mmActive#mobMenu-sec {
-    background-color: var(--whiteB);
     flex-direction: column;
 
     height: 100vh;
-
     width: 60%;
     max-width: 250px;
+
+    background-color: var(--wwhite);
 }
 
 

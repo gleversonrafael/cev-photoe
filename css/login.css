@@ -5,17 +5,13 @@
 /* -------------------------------------------- */
 
 /* main content */
-#mBlockLogin {
-    background-color: #acff2f15;
-    
+#mBlockLogin {    
     display: flex;
     align-items: center;
     flex-flow: column wrap;
 }
 
 #photoE-title {
-    border: 2px solid #ffff0073;    
-
     font: normal 2.5em var(--sFont);
     text-align: right;
 
@@ -48,13 +44,11 @@
     align-items: center;
 
     margin-top: 40px;
-    
-    background-color: #892be210;
+
     font-family: var(--rFont);
 }
 
 #loginF > section {
-    border: 2px solid red;
     width: 100%;
 }
 
@@ -115,17 +109,22 @@
     border: none;
 }
 
+
+/* dificuldade
+        ||
+    arrumar o padding dos inputs de email e senha que aumentam a largura do loginF e outros elemntos filhos
+    
+    (não consegui encontrar uma solução, mesmo com box-sizing: border-box ) 
+*/
+
 #logEmail, #logPass {
     height: 25px;
-
-    width: 100%;
     padding: 0 15px;
 }
 
-/* #logEmail, #logPass, #loginF, #slog {
+#logEmail, #logPass, #loginF, #slog {
     width: calc(100% - 30px);
-} */
-
+}
 
 #logEmail {
     margin-bottom: 12.5px;
