@@ -3,47 +3,59 @@
 
 /* Mobile first*/
 /* -------------------------------------------- */
+
+/* main content */
+#mBlockLogin {
+    background-color: #acff2f15;
+    
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#photoE-title {
+    border: 2px solid #ffff0073;    
+
+    font: normal 2.5em var(--sFont);
+    text-align: right;
+
+    width: fit-content;
+}
+
+#photoE-E {
+    font-size: 1.25em;
+    font-weight: 600;
+
+    color: var(--red);
+}
+
+#slog { /* slogan */
+    text-align: right;
+    transform: translateY(-25%);  
+  
+    font: normal 0.75em var(--sFont);
+    font-weight: 400;
+    margin-right: 1px;
+}
+
+
+
+
 /* form */
 #loginF {
-    font-family: var(--rFont);
-
     display: flex;
     flex-direction: column;
     align-items: center;
 
     margin-top: 40px;
+    
+    background-color: #892be210;
+    font-family: var(--rFont);
 }
 
-
-/* inputs */
-#loginF input{ /* login input box */    
-    border-radius: 25px;
-    border: none;
-}
-
-#logEmail, #logPass {
-    width: 90%;
-    height: 30px;
-
-    padding: 0px 5%;
-}
-
-#logEmail {
-    margin-bottom: 12.5px;
-}
-
-
-
-
-/* sections and elements that are relative to sections */
 #loginF > section {
-    width: calc(100% - 2px);
-    margin: 0px 1px;
-}
-
-#loginF > section:nth-of-type(3) {
-    display: flex;
-    justify-content: space-between;
+    border: 2px solid red;
+    width: 100%;
 }
 
 #loginF > section:nth-of-type(2) > div {
@@ -51,33 +63,31 @@
     justify-content: flex-end;
 }
 
+#loginF > section:nth-of-type(3) {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+/* form buttons */
 #lDataB {
     display: block;
     text-align: right;
 
-    margin-top: 5px;
-    margin-bottom: 40px;
-
-    font-weight: 300;
-    font-size: 0.8em;
-   
+    margin: 0px 5px 40px;   
     width: fit-content;
+
+    font-weight: 200;
+    font-size: 0.8em;
 }
 
-
-
-
-/* form buttons */
 #l-confirm, #l-sign {
-    color: var(--white);
-
     width: 48%;
     height: 30px;
-
-    padding: 0px 5px;
-    margin-bottom: 20px;
-
+    
     box-sizing: border-box;
+    color: var(--white);
 }
 
 #l-sign { /* login sign anchor */
@@ -95,9 +105,35 @@
 
     color: var(--black);
     background-color: var(--white);
-    
-    border: 2px solid var(--sblue);
 }
+
+
+
+/* inputs */
+#loginF input{ /* login input box */    
+    border-radius: 25px;
+    border: none;
+}
+
+#logEmail, #logPass {
+    height: 25px;
+
+    width: 100%;
+    padding: 0 15px;
+}
+
+/* #logEmail, #logPass, #loginF, #slog {
+    width: calc(100% - 30px);
+} */
+
+
+#logEmail {
+    margin-bottom: 12.5px;
+}
+
+
+
+
 
 
 

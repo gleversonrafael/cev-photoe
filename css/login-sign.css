@@ -16,45 +16,17 @@ body {
     justify-content: center;
 
     height: fit-content;
-    min-height: 360px;
-    max-height: 600px;
 
     width: 80%;
     max-width: 400px;
-
-    padding: 5vh 0px;
+    
+    padding: 5vh 0px 10vh 0px;
 }
-
-
-
-/* title */
-#photoE-title {
-    font: normal min(48px, 12.5vw) var(--sFont);
-    text-align: right;
-}
-
-#photoE-E {
-    color: var(--red);
-
-    font-size: min(64px, 17.5vw);
-    font-weight: 600;
-}
-
-#slog { /* slogan */
-    font: normal min(12px, 5vw) var(--sFont);
-    font-weight: 400;
-    margin-right: 1px;
-
-    transform: translateY(-25%);
-
-    text-align: right;
-}
-
 
 
 
 /* Resoluções com alturas muito pequenas */
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 500px) {
     body {
         background-attachment: fixed;
     }
@@ -75,7 +47,7 @@ body {
     /* main footer */
     #mFooter {
         position: static;
-        margin-top: 100px;
+        margin-top: 30vh;
     }
 }
 
