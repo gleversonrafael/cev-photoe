@@ -250,6 +250,6 @@ a:hover {
     }
 
     #mFooter {
-        display: static;
+        position: static;
     }
 }

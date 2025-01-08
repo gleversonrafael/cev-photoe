@@ -123,10 +123,25 @@
 
 #logEmail, #logPass, #loginF, #slog {
     width: calc(100% - 30px);
+    box-sizing: content-box;
 }
 
 #logEmail {
     margin-bottom: 12.5px;
+}
+
+
+/* Telas muito pequenas */
+@media screen and (max-height: 550px) {
+    #mCon {
+        min-height: 500px;
+        margin-top: 55px;
+    }
+
+    #mFooter {
+        margin-top: 2vh;
+        position: static;
+    }
 }
 
 
