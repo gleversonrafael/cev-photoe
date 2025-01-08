@@ -95,10 +95,10 @@
 
 #l-confirm:hover, #l-sign:hover {
     cursor: pointer;
-    transition: all 0.25s;
+    background-color: var(--wblue);
+    color: var(--white);
 
-    color: var(--black);
-    background-color: var(--white);
+    transition: all 0.25s;
 }
 
 
@@ -108,7 +108,6 @@
     border-radius: 25px;
     border: none;
 }
-
 
 /* dificuldade
         ||
@@ -129,7 +128,6 @@
 #logEmail {
     margin-bottom: 12.5px;
 }
-
 
 
 

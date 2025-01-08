@@ -34,11 +34,12 @@
     }
 
     .mArea:hover {
-        color: var(--black);
-        background-color: var(--medGrey);
-
         font-weight: 600;
 
+        color: var(--wblack);
+        background-color: transparent;
+        border-radius: 500px;
+        
         transition: ease 250ms;
     }
 
@@ -53,8 +54,12 @@
     #searchIcoA {
         width: fit-content;
         padding: 0px 15px;
+        border-radius: 100%;
     }
 
+    #searchIcoA:hover {
+        background-color: #ffffff98;
+    }
 }
 
 

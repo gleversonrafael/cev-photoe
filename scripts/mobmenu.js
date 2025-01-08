@@ -6,7 +6,15 @@ const mmSec = document.querySelector("section#mobMenu-sec");
 
 
 // events
-document.body.addEventListener("change", fixMenu);
+// menu fix
+window.addEventListener("resize", function () {
+    if(window.width >= 768) {
+        mm.classList.remove("mmActive");
+        mmSec.classList.remove("mmActive");
+    }
+    
+});
+
 mButton.addEventListener("click", mmSwitch);
 
 
@@ -15,23 +23,5 @@ function mmSwitch() {
     mm.classList.toggle("mmActive");
     mmSec.classList.toggle("mmActive");
 }
-
-function fixMenu() {
-    // variables
-
-    const mArea = document.getElementsByClassName("mArea");
-    const searchIco = document.getElementById("searchIco");
-    const searchIcoA = document.getElementById("searchIcoA");
-    
-    if(window.innerWidth >= "768px") {
-        mm.classList.remove("mmActive");
-        mmSec.classList.remove("mmActive");
-
-    } else {
-
-    }
-
-}
-
 
 

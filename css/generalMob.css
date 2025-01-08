@@ -9,6 +9,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -66,14 +67,13 @@ body, html {
 
 /* general settings in doc */
 #mHeader, #mFooter { /* main header */
+    justify-content: space-between;
+    width: 100%;
+
     font-family: var(--sFont);
 
     background-color: var(--wwhite);
     box-shadow: 0.5px 0.5px 2px #18181811;
-
-    justify-content: space-between;
-
-    width: 100%;
 }
 
 body {
@@ -143,10 +143,11 @@ a:hover {
 } 
 
 
+
+
 /* mobile menu */
 /* before touch */
 #mobMenu-sec {
-    border: 5px solid green;
     display: flex;
     align-self: flex-start;
 
@@ -156,12 +157,10 @@ a:hover {
 
 #mobMenu {
     display: none;
-    border: 2px solid red;
     list-style-type: none;
 }
 
 .mArea { /* menu area */
-    border: 1px solid blue;
     display: flex;
     align-items: center;
     
@@ -191,7 +190,7 @@ a:hover {
 }
 
 
-/* after touch / mobile menu active */
+/* after touch / activate mob menu */
 .mmActive#mobMenu {
     display: block;
 }
@@ -210,13 +209,11 @@ a:hover {
 
 
 /* footer */
-#mFooter {
-    position: absolute;
+#mFooter {    
     font-size: min(12px, 4vw);
 
     min-height: 40px;
 
-    bottom: 0;
     box-shadow: -0.5px -0.5px 2px #18181810;
 }
 
@@ -243,4 +240,16 @@ a:hover {
     align-items: center;
 
     margin: 0 25px;
+}
+
+/* Resoluções com alturas muito pequenas */
+@media screen and (max-height: 500px) {
+    #mCon {
+        min-height: 100vh;
+        padding: 5vh 0px;
+    }
+
+    #mFooter {
+        display: static;
+    }
 }

@@ -25,32 +25,11 @@ body {
 
 
 
-/* Resoluções com alturas muito pequenas */
-@media screen and (max-height: 500px) {
-    body {
-        background-attachment: fixed;
-    }
 
-    
-    /* main content */
-    #mCon {
-        display: flex;
-        align-items: start;
-
-        margin: 65px auto 0px 0px;
-        
-        min-height: 320px;
-        max-height: 400px;
-    }
-
-
-    /* main footer */
-    #mFooter {
-        position: static;
-        margin-top: 30vh;
-    }
+/* footer */
+#mFooter {
+    position: absolute;
+    bottom: 0;
 }
-
-
 
 

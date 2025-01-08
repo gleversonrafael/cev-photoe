@@ -1,0 +1,123 @@
+@charset "UTF_8";
+
+/* main content */
+#mCon {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mCon::before {
+    content: "";
+    
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    height: 100vh;
+
+    opacity: 0.5;
+
+    background-image: url(https://images.pexels.com/photos/3389613/pexels-photo-3389613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* text section */
+#mctxtBox {
+    font: 20px var(--rFont);
+}
+
+#photoE-title {
+    font: normal 500 50px var(--sFont);
+    margin-bottom: 2vh;
+}
+
+
+#photoE-E {
+    font: normal bold 70px var(--sFont);
+    color: var(--red);
+    font-family: var(--sFont);
+}
+
+
+/* spans(in order) */
+#mctxtBox p > span:nth-of-type(1), #mcBox > a {
+    font-weight: 200;
+}
+
+#mctxtBox p > span:nth-of-type(2) {
+    font-weight: 700;
+}
+
+#mctxtBox p > span > span {
+    color: var(--red);
+}
+
+
+/* button sec */
+#logB, #signB {
+    padding: 10px 15px;
+
+    font-family: var(--rFont);
+    text-align: left;
+
+    border-radius: 35px;
+    border: none;
+}
+
+
+#logB {
+    width: 70%;
+    margin: 6vh 0px 5px;
+
+    background-color: var(--wblack);
+    color: var(--white);
+}
+
+#signB {
+    background-color: var(--white);
+    width: 100%;
+}
+
+#logIco, #signIco {
+    width: 25px;
+    height: 25px;
+    
+    margin-right: 10px;
+}
+
+
+/* explore anchor */
+#mcBox > a {
+    font-family: var(--rFont);
+    font-size: 0.75em;
+    margin-left: 15px;
+}
+
+
+
+/* footer */
+#mFooter {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+/* Telas muito pequenas */
+@media screen and (max-height:500px) {
+    #mCon {
+        min-height: 500px;
+    }
+
+    #mFooter {
+        position: static;
+    }
+}
+
+
+
+
