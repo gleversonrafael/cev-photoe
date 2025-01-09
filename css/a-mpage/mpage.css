@@ -2,27 +2,16 @@
 
 /* main content */
 #mCon {
-    position: relative;
-
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-top: 0px;
+    height: calc(100vh - 40px);
 }
 
 #mCon::before {
-    content: "";
-    
-    position: absolute;
-    z-index: -1;
-
-    width: 100%;
-    height: 100vh;
-
-    opacity: 0.5;
-
     background-image: url(https://images.pexels.com/photos/3389613/pexels-photo-3389613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 
@@ -103,19 +92,6 @@
 /* footer */
 #mFooter {
     background-color: transparent;
-    box-shadow: none;
-}
-
-
-/* Telas muito pequenas */
-@media screen and (max-height:500px) {
-    #mCon {
-        min-height: 500px;
-    }
-
-    #mFooter {
-        position: static;
-    }
 }
 
 

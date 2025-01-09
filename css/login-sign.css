@@ -23,13 +23,26 @@ body {
     padding: 5vh 0px 10vh 0px;
 }
 
-
-
-
-/* footer */
-#mFooter {
-    position: absolute;
-    bottom: 0;
+#mCon {
+    justify-content: center;
 }
 
+
+@media screen and (min-width: 768px) {
+    #mCon::before {
+        content: "";
+        position: absolute;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+
+        height: 100%;
+        width: 100%;
+
+        z-index: -1;
+        opacity: 0.15;
+    }
+}
 

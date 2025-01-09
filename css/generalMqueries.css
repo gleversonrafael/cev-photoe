@@ -7,7 +7,9 @@
         display: none;
     }
 
-
+    #mCon {
+        min-height: 500px;
+    }
 
 
     /* menu */
